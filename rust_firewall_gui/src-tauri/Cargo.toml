@@ -1,0 +1,23 @@
+[package]
+name = "my-tauri-app"
+version = "0.1.0"
+description = "A Rust-based firewall with Tauri & React TS"
+authors = ["You"]
+edition = "2021"
+
+[dependencies]
+tauri = { version = "1.3", features = ["api-all"] }
+
+# For capturing packets
+pcap = "0.9.0"
+
+# For parsing packets
+etherparse = "0.14.0"
+
+# For SQLite
+rusqlite = "0.29.0"
+
+# For time (with formatting/parsing)
+time = { version = "0.3", features = ["formatting", "parsing"] }
+
+# etc.

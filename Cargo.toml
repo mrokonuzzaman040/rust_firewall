@@ -1,0 +1,20 @@
+[package]
+name = "rust_firewall"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+pcap = "0.9.0"       # Packet capture (libpcap)
+tui = "0.19"         # Terminal-based UI (optional)
+crossterm = "0.27"   # Terminal event handling (for TUI)
+serde = { version = "1.0", features = ["derive"] } # JSON handling
+serde_json = "1.0"   # Config storage
+log = "0.4"          # Logging
+tokio = { version = "1", features = ["full"] } # Async runtime
+chrono = "0.4"       # Timestamp handling
+clap = { version = "4.0", features = ["derive"] } # CLI argument parsing
+etherparse = "0.14.0"  # Packet parsing library
+ratatui = "0.23"     # Rust TUI (Terminal UI) Library
+regex = "1.7.0"      # For filtering IPs & ports
+rusqlite = "0.29.0" 
+time = { version = "0.3", features = ["formatting", "parsing"] }
